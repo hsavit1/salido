@@ -7,13 +7,27 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Store.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-//
+
+
++ (instancetype)sharedDelegate
+{
+    return [UIApplication sharedApplication].delegate;
+}
+
+- (Store *)store
+{
+    if (_store == nil) {
+        //make a db fetch to wine store
+        _store = [Store store];
+    }
+    return _store;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

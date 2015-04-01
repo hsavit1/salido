@@ -1,15 +1,14 @@
 //
-//  ViewController.h
+//  HSTableViewDelegate.h
 //  SalidoInterviewQuestion
 //
-//  Created by Henry Savit on 3/31/15.
+//  Created by Henry Savit on 4/1/15.
 //  Copyright (c) 2015 Henry Savit. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HSTableViewDelegate : NSObject
 
 
 @end
-

@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		5CE3B73F1ACBA2FA00A1D099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B73E1ACBA2FA00A1D099 /* main.m */; };
 		5CE3B7421ACBA2FA00A1D099 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7411ACBA2FA00A1D099 /* AppDelegate.m */; };
-		5CE3B7451ACBA2FA00A1D099 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7441ACBA2FA00A1D099 /* ViewController.m */; };
+		5CE3B7451ACBA2FA00A1D099 /* HSCatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */; };
 		5CE3B7481ACBA2FA00A1D099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3B7461ACBA2FA00A1D099 /* Main.storyboard */; };
 		5CE3B74A1ACBA2FA00A1D099 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3B7491ACBA2FA00A1D099 /* Images.xcassets */; };
 		5CE3B74D1ACBA2FA00A1D099 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3B74B1ACBA2FA00A1D099 /* LaunchScreen.xib */; };
 		5CE3B7591ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7581ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m */; };
+		5CE3B7641ACBAAD800A1D099 /* HSCatalogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7631ACBAAD800A1D099 /* HSCatalogDataSource.m */; };
+		5CE3B8671ACCA1A600A1D099 /* HSTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */; };
+		5CE3B86A1ACCA25500A1D099 /* HSCatalogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */; };
+		5CE3B86D1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B86C1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m */; };
+		5CE3B8711ACCA2D700A1D099 /* CatalogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */; };
+		5CE3B87A1ACCA54900A1D099 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8791ACCA54900A1D099 /* DetailViewController.m */; };
+		5CE3B87D1ACCA96600A1D099 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B87C1ACCA96600A1D099 /* Store.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +39,28 @@
 		5CE3B73E1ACBA2FA00A1D099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CE3B7401ACBA2FA00A1D099 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CE3B7411ACBA2FA00A1D099 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5CE3B7431ACBA2FA00A1D099 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5CE3B7441ACBA2FA00A1D099 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CE3B7431ACBA2FA00A1D099 /* HSCatalogTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSCatalogTableViewController.h; sourceTree = "<group>"; };
+		5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSCatalogTableViewController.m; sourceTree = "<group>"; };
 		5CE3B7471ACBA2FA00A1D099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CE3B7491ACBA2FA00A1D099 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5CE3B74C1ACBA2FA00A1D099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5CE3B7521ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalidoInterviewQuestionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE3B7571ACBA2FA00A1D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE3B7581ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalidoInterviewQuestionTests.m; sourceTree = "<group>"; };
+		5CE3B7621ACBAAD800A1D099 /* HSCatalogDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCatalogDataSource.h; sourceTree = "<group>"; };
+		5CE3B7631ACBAAD800A1D099 /* HSCatalogDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCatalogDataSource.m; sourceTree = "<group>"; };
+		5CE3B8651ACCA1A600A1D099 /* HSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTableViewDelegate.h; sourceTree = "<group>"; };
+		5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTableViewDelegate.m; sourceTree = "<group>"; };
+		5CE3B8681ACCA25500A1D099 /* HSCatalogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCatalogTableViewCell.h; sourceTree = "<group>"; };
+		5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCatalogTableViewCell.m; sourceTree = "<group>"; };
+		5CE3B86B1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSCatalogTableViewCell+ConfigureCell.h"; sourceTree = "<group>"; };
+		5CE3B86C1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HSCatalogTableViewCell+ConfigureCell.m"; sourceTree = "<group>"; };
+		5CE3B86F1ACCA2D700A1D099 /* CatalogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItem.h; sourceTree = "<group>"; };
+		5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItem.m; sourceTree = "<group>"; };
+		5CE3B8781ACCA54900A1D099 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5CE3B8791ACCA54900A1D099 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5CE3B87B1ACCA96600A1D099 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		5CE3B87C1ACCA96600A1D099 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +102,13 @@
 		5CE3B73B1ACBA2FA00A1D099 /* SalidoInterviewQuestion */ = {
 			isa = PBXGroup;
 			children = (
-				5CE3B7401ACBA2FA00A1D099 /* AppDelegate.h */,
-				5CE3B7411ACBA2FA00A1D099 /* AppDelegate.m */,
-				5CE3B7431ACBA2FA00A1D099 /* ViewController.h */,
-				5CE3B7441ACBA2FA00A1D099 /* ViewController.m */,
-				5CE3B7461ACBA2FA00A1D099 /* Main.storyboard */,
-				5CE3B7491ACBA2FA00A1D099 /* Images.xcassets */,
-				5CE3B74B1ACBA2FA00A1D099 /* LaunchScreen.xib */,
+				5CE3B8741ACCA30800A1D099 /* Storyboards */,
+				5CE3B8731ACCA30100A1D099 /* Main */,
+				5CE3B8771ACCA34900A1D099 /* Delegates */,
+				5CE3B8761ACCA33900A1D099 /* Category */,
+				5CE3B8751ACCA32300A1D099 /* View */,
+				5CE3B8721ACCA2F500A1D099 /* Controller */,
+				5CE3B86E1ACCA2BD00A1D099 /* Model */,
 				5CE3B73C1ACBA2FA00A1D099 /* Supporting Files */,
 			);
 			path = SalidoInterviewQuestion;
@@ -117,6 +138,76 @@
 				5CE3B7571ACBA2FA00A1D099 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CE3B86E1ACCA2BD00A1D099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B86F1ACCA2D700A1D099 /* CatalogItem.h */,
+				5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */,
+				5CE3B7621ACBAAD800A1D099 /* HSCatalogDataSource.h */,
+				5CE3B7631ACBAAD800A1D099 /* HSCatalogDataSource.m */,
+				5CE3B87B1ACCA96600A1D099 /* Store.h */,
+				5CE3B87C1ACCA96600A1D099 /* Store.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5CE3B8721ACCA2F500A1D099 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B7431ACBA2FA00A1D099 /* HSCatalogTableViewController.h */,
+				5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */,
+				5CE3B8781ACCA54900A1D099 /* DetailViewController.h */,
+				5CE3B8791ACCA54900A1D099 /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5CE3B8731ACCA30100A1D099 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B7401ACBA2FA00A1D099 /* AppDelegate.h */,
+				5CE3B7411ACBA2FA00A1D099 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5CE3B8741ACCA30800A1D099 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B7461ACBA2FA00A1D099 /* Main.storyboard */,
+				5CE3B7491ACBA2FA00A1D099 /* Images.xcassets */,
+				5CE3B74B1ACBA2FA00A1D099 /* LaunchScreen.xib */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5CE3B8751ACCA32300A1D099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B8681ACCA25500A1D099 /* HSCatalogTableViewCell.h */,
+				5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5CE3B8761ACCA33900A1D099 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B86B1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.h */,
+				5CE3B86C1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		5CE3B8771ACCA34900A1D099 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B8651ACCA1A600A1D099 /* HSTableViewDelegate.h */,
+				5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE3B7451ACBA2FA00A1D099 /* ViewController.m in Sources */,
+				5CE3B86D1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m in Sources */,
+				5CE3B87A1ACCA54900A1D099 /* DetailViewController.m in Sources */,
+				5CE3B8671ACCA1A600A1D099 /* HSTableViewDelegate.m in Sources */,
+				5CE3B86A1ACCA25500A1D099 /* HSCatalogTableViewCell.m in Sources */,
+				5CE3B7641ACBAAD800A1D099 /* HSCatalogDataSource.m in Sources */,
+				5CE3B7451ACBA2FA00A1D099 /* HSCatalogTableViewController.m in Sources */,
+				5CE3B87D1ACCA96600A1D099 /* Store.m in Sources */,
 				5CE3B7421ACBA2FA00A1D099 /* AppDelegate.m in Sources */,
 				5CE3B73F1ACBA2FA00A1D099 /* main.m in Sources */,
+				5CE3B8711ACCA2D700A1D099 /* CatalogItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +510,7 @@
 				5CE3B75E1ACBA2FA00A1D099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CE3B75F1ACBA2FA00A1D099 /* Build configuration list for PBXNativeTarget "SalidoInterviewQuestionTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +519,7 @@
 				5CE3B7611ACBA2FA00A1D099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
