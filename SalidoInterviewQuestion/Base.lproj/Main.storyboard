@@ -48,7 +48,7 @@
         <!--Detailed View-->
         <scene sceneID="DjV-79-ANF">
             <objects>
-                <viewController id="YrC-61-Zzd" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController id="YrC-61-Zzd" customClass="HSDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3TO-P3-3H8"/>
                         <viewControllerLayoutGuide type="bottom" id="8Y2-6t-8Ro"/>

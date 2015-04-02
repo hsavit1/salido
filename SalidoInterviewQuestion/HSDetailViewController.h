@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 @class CatalogItem;
-@interface DetailViewController : UIViewController
+
+@interface HSDetailViewController : UIViewController
 
 @property (nonatomic, strong) CatalogItem *selectedItem;
 

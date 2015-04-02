@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) NSArray *items;
 //@property (readonly, nonatomic, strong) NSArray *items;
+@property (nonatomic, strong) NSDictionary *responseDictionary;
+
 
 - (NSArray*)items;
 

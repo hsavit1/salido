@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Henry Savit. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "HSDetailViewController.h"
 
-@interface DetailViewController ()
+@interface HSDetailViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation HSDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

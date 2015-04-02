@@ -15,11 +15,10 @@
 		5CE3B74D1ACBA2FA00A1D099 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3B74B1ACBA2FA00A1D099 /* LaunchScreen.xib */; };
 		5CE3B7591ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7581ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m */; };
 		5CE3B7641ACBAAD800A1D099 /* HSCatalogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7631ACBAAD800A1D099 /* HSCatalogDataSource.m */; };
-		5CE3B8671ACCA1A600A1D099 /* HSTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */; };
 		5CE3B86A1ACCA25500A1D099 /* HSCatalogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */; };
 		5CE3B86D1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B86C1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m */; };
 		5CE3B8711ACCA2D700A1D099 /* CatalogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */; };
-		5CE3B87A1ACCA54900A1D099 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8791ACCA54900A1D099 /* DetailViewController.m */; };
+		5CE3B87A1ACCA54900A1D099 /* HSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8791ACCA54900A1D099 /* HSDetailViewController.m */; };
 		5CE3B87D1ACCA96600A1D099 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B87C1ACCA96600A1D099 /* Store.m */; };
 		5CE3B8A81ACCB76600A1D099 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8841ACCB76600A1D099 /* AFHTTPRequestOperation.m */; };
 		5CE3B8A91ACCB76600A1D099 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8861ACCB76600A1D099 /* AFHTTPRequestOperationManager.m */; };
@@ -39,6 +38,8 @@
 		5CE3B8B71ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8A51ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m */; };
 		5CE3B8B81ACCB76600A1D099 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8A71ACCB76600A1D099 /* UIWebView+AFNetworking.m */; };
 		5CE3B8BD1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */; };
+		5CE3B8C11ACDFDA000A1D099 /* HSShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8C01ACDFDA000A1D099 /* HSShoppingCartViewController.m */; };
+		5CE3B8C41ACDFDC200A1D099 /* HSCompletedPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8C31ACDFDC200A1D099 /* HSCompletedPurchaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,16 +68,14 @@
 		5CE3B7581ACBA2FA00A1D099 /* SalidoInterviewQuestionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalidoInterviewQuestionTests.m; sourceTree = "<group>"; };
 		5CE3B7621ACBAAD800A1D099 /* HSCatalogDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCatalogDataSource.h; sourceTree = "<group>"; };
 		5CE3B7631ACBAAD800A1D099 /* HSCatalogDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCatalogDataSource.m; sourceTree = "<group>"; };
-		5CE3B8651ACCA1A600A1D099 /* HSTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTableViewDelegate.h; sourceTree = "<group>"; };
-		5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTableViewDelegate.m; sourceTree = "<group>"; };
 		5CE3B8681ACCA25500A1D099 /* HSCatalogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCatalogTableViewCell.h; sourceTree = "<group>"; };
 		5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCatalogTableViewCell.m; sourceTree = "<group>"; };
 		5CE3B86B1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HSCatalogTableViewCell+ConfigureCell.h"; sourceTree = "<group>"; };
 		5CE3B86C1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HSCatalogTableViewCell+ConfigureCell.m"; sourceTree = "<group>"; };
 		5CE3B86F1ACCA2D700A1D099 /* CatalogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItem.h; sourceTree = "<group>"; };
 		5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItem.m; sourceTree = "<group>"; };
-		5CE3B8781ACCA54900A1D099 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		5CE3B8791ACCA54900A1D099 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5CE3B8781ACCA54900A1D099 /* HSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDetailViewController.h; sourceTree = "<group>"; };
+		5CE3B8791ACCA54900A1D099 /* HSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDetailViewController.m; sourceTree = "<group>"; };
 		5CE3B87B1ACCA96600A1D099 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		5CE3B87C1ACCA96600A1D099 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		5CE3B8831ACCB76600A1D099 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -117,6 +116,10 @@
 		5CE3B8A71ACCB76600A1D099 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		5CE3B8BB1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
 		5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseSerializerWithData.m; sourceTree = "<group>"; };
+		5CE3B8BF1ACDFDA000A1D099 /* HSShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSShoppingCartViewController.h; sourceTree = "<group>"; };
+		5CE3B8C01ACDFDA000A1D099 /* HSShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSShoppingCartViewController.m; sourceTree = "<group>"; };
+		5CE3B8C21ACDFDC200A1D099 /* HSCompletedPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSCompletedPurchaseViewController.h; sourceTree = "<group>"; };
+		5CE3B8C31ACDFDC200A1D099 /* HSCompletedPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSCompletedPurchaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,15 +161,10 @@
 		5CE3B73B1ACBA2FA00A1D099 /* SalidoInterviewQuestion */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3B8BE1ACDF78300A1D099 /* Obj-c */,
 				5CE3B8BA1ACCB82D00A1D099 /* MVC */,
 				5CE3B8741ACCA30800A1D099 /* Storyboards */,
-				5CE3B8731ACCA30100A1D099 /* Main */,
-				5CE3B8771ACCA34900A1D099 /* Delegates */,
-				5CE3B8B91ACCB80B00A1D099 /* DataSource */,
-				5CE3B8761ACCA33900A1D099 /* Category */,
 				5CE3B73C1ACBA2FA00A1D099 /* Supporting Files */,
-				5CE3B8BB1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.h */,
-				5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */,
 			);
 			path = SalidoInterviewQuestion;
 			sourceTree = "<group>";
@@ -201,6 +199,8 @@
 		5CE3B86E1ACCA2BD00A1D099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3B8BB1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.h */,
+				5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */,
 				5CE3B86F1ACCA2D700A1D099 /* CatalogItem.h */,
 				5CE3B8701ACCA2D700A1D099 /* CatalogItem.m */,
 				5CE3B87B1ACCA96600A1D099 /* Store.h */,
@@ -212,6 +212,14 @@
 		5CE3B8721ACCA2F500A1D099 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3B7431ACBA2FA00A1D099 /* HSCatalogTableViewController.h */,
+				5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */,
+				5CE3B8781ACCA54900A1D099 /* HSDetailViewController.h */,
+				5CE3B8791ACCA54900A1D099 /* HSDetailViewController.m */,
+				5CE3B8BF1ACDFDA000A1D099 /* HSShoppingCartViewController.h */,
+				5CE3B8C01ACDFDA000A1D099 /* HSShoppingCartViewController.m */,
+				5CE3B8C21ACDFDC200A1D099 /* HSCompletedPurchaseViewController.h */,
+				5CE3B8C31ACDFDC200A1D099 /* HSCompletedPurchaseViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -238,6 +246,8 @@
 		5CE3B8751ACCA32300A1D099 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3B8681ACCA25500A1D099 /* HSCatalogTableViewCell.h */,
+				5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -254,8 +264,6 @@
 		5CE3B8771ACCA34900A1D099 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				5CE3B8651ACCA1A600A1D099 /* HSTableViewDelegate.h */,
-				5CE3B8661ACCA1A600A1D099 /* HSTableViewDelegate.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -341,15 +349,20 @@
 			children = (
 				5CE3B86E1ACCA2BD00A1D099 /* Model */,
 				5CE3B8751ACCA32300A1D099 /* View */,
-				5CE3B8681ACCA25500A1D099 /* HSCatalogTableViewCell.h */,
-				5CE3B8691ACCA25500A1D099 /* HSCatalogTableViewCell.m */,
 				5CE3B8721ACCA2F500A1D099 /* Controller */,
-				5CE3B7431ACBA2FA00A1D099 /* HSCatalogTableViewController.h */,
-				5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */,
-				5CE3B8781ACCA54900A1D099 /* DetailViewController.h */,
-				5CE3B8791ACCA54900A1D099 /* DetailViewController.m */,
 			);
 			name = MVC;
+			sourceTree = "<group>";
+		};
+		5CE3B8BE1ACDF78300A1D099 /* Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3B8731ACCA30100A1D099 /* Main */,
+				5CE3B8771ACCA34900A1D099 /* Delegates */,
+				5CE3B8B91ACCB80B00A1D099 /* DataSource */,
+				5CE3B8761ACCA33900A1D099 /* Category */,
+			);
+			name = "Obj-c";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,17 +465,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE3B8C41ACDFDC200A1D099 /* HSCompletedPurchaseViewController.m in Sources */,
 				5CE3B8AD1ACCB76600A1D099 /* AFURLConnectionOperation.m in Sources */,
+				5CE3B8C11ACDFDA000A1D099 /* HSShoppingCartViewController.m in Sources */,
 				5CE3B86D1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m in Sources */,
 				5CE3B8AC1ACCB76600A1D099 /* AFSecurityPolicy.m in Sources */,
-				5CE3B87A1ACCA54900A1D099 /* DetailViewController.m in Sources */,
+				5CE3B87A1ACCA54900A1D099 /* HSDetailViewController.m in Sources */,
 				5CE3B8B61ACCB76600A1D099 /* UIProgressView+AFNetworking.m in Sources */,
 				5CE3B8B31ACCB76600A1D099 /* UIAlertView+AFNetworking.m in Sources */,
 				5CE3B8B11ACCB76600A1D099 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				5CE3B8A91ACCB76600A1D099 /* AFHTTPRequestOperationManager.m in Sources */,
 				5CE3B8B41ACCB76600A1D099 /* UIButton+AFNetworking.m in Sources */,
 				5CE3B8B21ACCB76600A1D099 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				5CE3B8671ACCA1A600A1D099 /* HSTableViewDelegate.m in Sources */,
 				5CE3B8B81ACCB76600A1D099 /* UIWebView+AFNetworking.m in Sources */,
 				5CE3B86A1ACCA25500A1D099 /* HSCatalogTableViewCell.m in Sources */,
 				5CE3B7641ACBAAD800A1D099 /* HSCatalogDataSource.m in Sources */,

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Henry Savit. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "HSDetailViewController.h"
 #import "HSCatalogTableViewController.h"
 #import "HSCatalogDataSource.h"
 #import "HSCatalogTableViewCell.h"
@@ -26,15 +26,13 @@ static NSString * const CatalogCellIdentifier = @"CatalogCell";
 
 @implementation HSCatalogTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.navigationItem.title = @"Photos";
     [self setupTableView];
 }
 
-- (void)setupTableView
-{
+- (void)setupTableView{
     TableViewCellConfigureBlock configureCell = ^(HSCatalogTableViewCell *cell, CatalogItem *item) {
         [cell configureForCatalogItem:item];
     };
@@ -48,10 +46,8 @@ static NSString * const CatalogCellIdentifier = @"CatalogCell";
 
 #pragma mark UITableViewDelegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    DetailViewController *dVC = [[DetailViewController alloc] initWithNibName:@"Main"
-                                                                                     bundle:nil];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    HSDetailViewController *dVC = [[HSDetailViewController alloc] initWithNibName:@"Main" bundle:nil];
     dVC.selectedItem = [self.ds itemAtIndexPath:indexPath];
     [self.navigationController pushViewController:dVC animated:YES];
 }
