@@ -38,6 +38,7 @@
 		5CE3B8B61ACCB76600A1D099 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8A31ACCB76600A1D099 /* UIProgressView+AFNetworking.m */; };
 		5CE3B8B71ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8A51ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m */; };
 		5CE3B8B81ACCB76600A1D099 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8A71ACCB76600A1D099 /* UIWebView+AFNetworking.m */; };
+		5CE3B8BD1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		5CE3B8A51ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		5CE3B8A61ACCB76600A1D099 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		5CE3B8A71ACCB76600A1D099 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		5CE3B8BB1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONResponseSerializerWithData.h; sourceTree = "<group>"; };
+		5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONResponseSerializerWithData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				5CE3B8B91ACCB80B00A1D099 /* DataSource */,
 				5CE3B8761ACCA33900A1D099 /* Category */,
 				5CE3B73C1ACBA2FA00A1D099 /* Supporting Files */,
+				5CE3B8BB1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.h */,
+				5CE3B8BC1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m */,
 			);
 			path = SalidoInterviewQuestion;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				5CE3B8B71ACCB76600A1D099 /* UIRefreshControl+AFNetworking.m in Sources */,
 				5CE3B8B51ACCB76600A1D099 /* UIImageView+AFNetworking.m in Sources */,
 				5CE3B8AB1ACCB76600A1D099 /* AFNetworkReachabilityManager.m in Sources */,
+				5CE3B8BD1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m in Sources */,
 				5CE3B8711ACCA2D700A1D099 /* CatalogItem.m in Sources */,
 				5CE3B8A81ACCB76600A1D099 /* AFHTTPRequestOperation.m in Sources */,
 				5CE3B8AA1ACCB76600A1D099 /* AFHTTPSessionManager.m in Sources */,
