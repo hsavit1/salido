@@ -8,9 +8,6 @@
 
 #import "HSCatalogDataSource.h"
 
-NSString * const kAPIKey = @"9520e90171cebf267fc05e9dcee4c0e3";
-static NSString * const kWineOnlineURLString = @"http://services.wine.com/api/beta2/service.svc/format/resource?apikey=9520e90171cebf267fc05e9dcee4c0e3";
-
 @interface HSCatalogDataSource ()
 
 @property (nonatomic, strong) NSArray *items;

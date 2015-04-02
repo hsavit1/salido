@@ -8,6 +8,10 @@
 
 #import "Store.h"
 #import "CatalogItem.h"
+#import "AFNetworking.h"
+
+NSString * const kAPIKey = @"9520e90171cebf267fc05e9dcee4c0e3";
+static NSString * const kWineOnlineURLString = @"http://services.wine.com/api/beta2/service.svc/JSON/catalog?apikey=9520e90171cebf267fc05e9dcee4c0e3";
 
 @implementation Store
 
@@ -25,27 +29,19 @@
     return self;
 }
 
-- (void)readArchive
-{
-    //fetch from db
-    
-    
-//    NSURL *archiveURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"photodata" withExtension:@"bin"];
-//    NSAssert(archiveURL != nil, @"Unable to find archive in bundle.");
-//    NSData *data = [NSData dataWithContentsOfURL:archiveURL options:0 error:NULL];
-//    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-//    _users = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@"users"];
-//    _items = [unarchiver decodeObjectOfClass:[NSArray class] forKey:@"photos"];
-//    [unarchiver finishDecoding];
-}
+- (void)readArchive{
 
-//- (NSArray *)items
-//{
-////    return [self.items sortedArrayUsingComparator:^NSComparisonResult(CatalogItem *item1, CatalogItem *item2) {
-////        return [item2.creationDate compare:item1.creationDate];
-////    }];
-//    return nil;
-//}
+    NSString *parameter = @"";
+    NSString *combinedString = [kWineOnlineURLString stringByAppendingString:parameter];
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:kWineOnlineURLString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+ 
+}
 
 
 @end
