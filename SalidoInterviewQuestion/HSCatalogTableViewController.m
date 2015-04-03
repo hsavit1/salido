@@ -29,19 +29,30 @@ static NSString * const CatalogCellIdentifier = @"CatalogCell";
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.navigationItem.title = @"Photos";
-    [self setupTableView];
+    
+    [Store store];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveEvent:) name:@"dataRecieved" object:nil];
+
 }
 
-- (void)setupTableView{
+- (void)receiveEvent:(NSNotification *)notification {
+
+    NSArray *items = [[NSArray alloc]initWithObjects:nil];
+    items = [[Store store].items copy];
+    
     TableViewCellConfigureBlock configureCell = ^(HSCatalogTableViewCell *cell, CatalogItem *item) {
         [cell configureForCatalogItem:item];
     };
-    NSArray *items = [AppDelegate sharedDelegate].store.items;
-    self.ds = [[HSCatalogDataSource alloc] initWithItems:items
-                                          cellIdentifier:CatalogCellIdentifier
-                                      configureCellBlock:configureCell];
-    self.tableView.dataSource = self.ds;
-//    [self.tableView registerNib:[CatalogCell nib] forCellReuseIdentifier:CatalogCellIdentifier];
+    
+    if(!items.count){
+        NSLog(@"Problem! No data items fetched | dataitems not fetched in time");
+    }
+    else{
+        self.ds = [[HSCatalogDataSource alloc] initWithItems:items
+                                              cellIdentifier:CatalogCellIdentifier
+                                          configureCellBlock:configureCell];
+        self.tableView.dataSource = self.ds;
+    }
 }
 
 #pragma mark UITableViewDelegate
@@ -49,7 +60,9 @@ static NSString * const CatalogCellIdentifier = @"CatalogCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     HSDetailViewController *dVC = [sb instantiateViewControllerWithIdentifier:@"detailViewController"];
+    
     dVC.selectedItem = [self.ds itemAtIndexPath:indexPath];
+    
     [self.navigationController pushViewController:dVC animated:YES];
 }
 

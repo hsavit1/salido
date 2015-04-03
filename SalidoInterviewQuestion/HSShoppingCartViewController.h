@@ -10,4 +10,9 @@
 
 @interface HSShoppingCartViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+@property (weak, nonatomic) IBOutlet UILabel *quantityLabel;
+
+
 @end

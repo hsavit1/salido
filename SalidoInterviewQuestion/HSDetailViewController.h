@@ -12,5 +12,8 @@
 @interface HSDetailViewController : UIViewController
 
 @property (nonatomic, strong) CatalogItem *selectedItem;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *itemNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *vineyardInfoLabel;
 
 @end

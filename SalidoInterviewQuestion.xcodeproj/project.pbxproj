@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C650EFE1ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C650EF91ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.m */; };
+		5C650EFF1ACE2DCF00D60C45 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C650EFB1ACE2DCF00D60C45 /* SVProgressHUD.bundle */; };
+		5C650F001ACE2DCF00D60C45 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C650EFD1ACE2DCF00D60C45 /* SVProgressHUD.m */; };
 		5CE3B73F1ACBA2FA00A1D099 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B73E1ACBA2FA00A1D099 /* main.m */; };
 		5CE3B7421ACBA2FA00A1D099 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7411ACBA2FA00A1D099 /* AppDelegate.m */; };
 		5CE3B7451ACBA2FA00A1D099 /* HSCatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B7441ACBA2FA00A1D099 /* HSCatalogTableViewController.m */; };
@@ -53,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C650EF81ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		5C650EF91ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		5C650EFA1ACE2DCF00D60C45 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		5C650EFB1ACE2DCF00D60C45 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		5C650EFC1ACE2DCF00D60C45 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		5C650EFD1ACE2DCF00D60C45 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		5CE3B7391ACBA2FA00A1D099 /* SalidoInterviewQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalidoInterviewQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE3B73D1ACBA2FA00A1D099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE3B73E1ACBA2FA00A1D099 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,6 +149,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C650EF71ACE2DCF00D60C45 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5C650EF81ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.h */,
+				5C650EF91ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.m */,
+				5C650EFA1ACE2DCF00D60C45 /* SVProgressHUD-Prefix.pch */,
+				5C650EFB1ACE2DCF00D60C45 /* SVProgressHUD.bundle */,
+				5C650EFC1ACE2DCF00D60C45 /* SVProgressHUD.h */,
+				5C650EFD1ACE2DCF00D60C45 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = SOURCE_ROOT;
+		};
 		5CE3B7301ACBA2FA00A1D099 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +293,7 @@
 		5CE3B8801ACCB75A00A1D099 /* Addtional Libs */ = {
 			isa = PBXGroup;
 			children = (
+				5C650EF71ACE2DCF00D60C45 /* SVProgressHUD */,
 				5CE3B8811ACCB76600A1D099 /* AFNetworking */,
 			);
 			name = "Addtional Libs";
@@ -448,6 +471,7 @@
 				5CE3B7481ACBA2FA00A1D099 /* Main.storyboard in Resources */,
 				5CE3B74D1ACBA2FA00A1D099 /* LaunchScreen.xib in Resources */,
 				5CE3B74A1ACBA2FA00A1D099 /* Images.xcassets in Resources */,
+				5C650EFF1ACE2DCF00D60C45 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +494,7 @@
 				5CE3B8C11ACDFDA000A1D099 /* HSShoppingCartViewController.m in Sources */,
 				5CE3B86D1ACCA27A00A1D099 /* HSCatalogTableViewCell+ConfigureCell.m in Sources */,
 				5CE3B8AC1ACCB76600A1D099 /* AFSecurityPolicy.m in Sources */,
+				5C650EFE1ACE2DCF00D60C45 /* SVIndefiniteAnimatedView.m in Sources */,
 				5CE3B87A1ACCA54900A1D099 /* HSDetailViewController.m in Sources */,
 				5CE3B8B61ACCB76600A1D099 /* UIProgressView+AFNetworking.m in Sources */,
 				5CE3B8B31ACCB76600A1D099 /* UIAlertView+AFNetworking.m in Sources */,
@@ -493,6 +518,7 @@
 				5CE3B8BD1ACDF5EE00A1D099 /* JSONResponseSerializerWithData.m in Sources */,
 				5CE3B8711ACCA2D700A1D099 /* CatalogItem.m in Sources */,
 				5CE3B8A81ACCB76600A1D099 /* AFHTTPRequestOperation.m in Sources */,
+				5C650F001ACE2DCF00D60C45 /* SVProgressHUD.m in Sources */,
 				5CE3B8AA1ACCB76600A1D099 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

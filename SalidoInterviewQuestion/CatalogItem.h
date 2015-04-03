@@ -12,5 +12,7 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSNumber *retailPrice;
+@property (nonatomic, strong) NSString *jsonDump;
+@property (nonatomic, strong) NSString *catalogImageUrl;
 
 @end
