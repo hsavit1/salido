@@ -31,26 +31,42 @@ static NSString * const kWineOnlineURLString = @"http://services.wine.com/api/be
 }
 
 - (void)readArchive{
- 
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [JSONResponseSerializerWithData serializer];
     [manager GET:kWineOnlineURLString parameters:@{@"key1": @"value1"} success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         self.responseDictionary = (NSDictionary*)responseObject;
-//        NSLog(@"success %@", responseObject);
+        //        NSLog(@"success %@", responseObject);
         
         int numObjects = (int)[[[self.responseDictionary objectForKey:@"Products"] valueForKey:@"List"] count];
         //NSLog(@"%i", numObjects);
+        
+        
+        NSMutableArray *mutableArray = [[NSMutableArray alloc]init];
         for(int i = 0; i < numObjects; i++){
-            NSLog(@"%@", [[self.responseDictionary objectForKey:@"Products"] objectForKey:@"List"]);
+            //NSLog(@"%@", [[self.responseDictionary objectForKey:@"Products"] objectForKey:@"List"][i]);
+            
+            NSDictionary *tempDictionary = [[NSDictionary alloc]initWithDictionary:[[self.responseDictionary objectForKey:@"Products"] objectForKey:@"List"][i]];
+            
+            NSString *productName = [tempDictionary objectForKey:@"Name"];
+            NSInteger retailPrice = [[tempDictionary objectForKey:@"PriceRetail"] integerValue];
+            
+            
+            
+            tempDictionary = nil;
+            
+            //NSDictionary *ratingsDictionary = [[NSDictionary alloc]initWithDictionary:[tempDictionary objectForKey:@"Ratings"]];
+            //NSDictionary *vinyardDictionary = [[NSDictionary alloc]initWithDictionary:[tempDictionary objectForKey:@"Vinyard"]];
+            
         }
     }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              // get the json here
              id json = error.userInfo[JSONResponseSerializerWithDataKey];
              NSLog(@"failure %@", json);
-    }];
-
+         }];
+    
 }
 
 

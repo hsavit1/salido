@@ -10,5 +10,6 @@
 
 @interface HSCatalogTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *catalogTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *catalogProductPrice;
 
 @end

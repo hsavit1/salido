@@ -13,7 +13,8 @@
 
 - (void)configureForCatalogItem:(CatalogItem *)item
 {
-    self.catalogTitleLabel.text = item.name;
+    self.catalogTitleLabel.text = @"hi";//item.name;
+    self.catalogProductPrice.text = @"there";//[item.retailPrice stringValue];
 }
 
 @end

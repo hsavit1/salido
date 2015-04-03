@@ -47,7 +47,8 @@ static NSString * const CatalogCellIdentifier = @"CatalogCell";
 #pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    HSDetailViewController *dVC = [[HSDetailViewController alloc] initWithNibName:@"Main" bundle:nil];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    HSDetailViewController *dVC = [sb instantiateViewControllerWithIdentifier:@"detailViewController"];
     dVC.selectedItem = [self.ds itemAtIndexPath:indexPath];
     [self.navigationController pushViewController:dVC animated:YES];
 }

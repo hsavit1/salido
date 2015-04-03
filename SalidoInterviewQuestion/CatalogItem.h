@@ -11,5 +11,6 @@
 @interface CatalogItem : NSObject
 
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSNumber *retailPrice;
 
 @end
